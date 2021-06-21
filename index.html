@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./favicon/favicon.ico">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./tailwind.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title>Lua Branca</title>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+</head>
+
+<body class="overflow-hidden">
+    <main class="text-xl bg-gray-200 text-gray-800">
+        <div class="intro h-screen grid grid-rows-3 items-center justify-items-center leading-none">
+            <span></span>
+            <h1 class="font-black tracking-tighter mb-10" data-aos="zoom-in" data-aos-duration="3000">Hello Guapa.</h1>
+            <a href="#phrase" style="font-family: 'Caveat', cursive;"
+                class="text-gray-900 text-4xl py-3 px-20 font-semibold" id="introBtn">Next step ---></a>
+        </div>
+        <div class="h-screen flex items-center" id="phrase">
+            <div class="w-3/5 px-10">
+                <p class="phrase text-7xl" id="phraseContent">
+                    In this world of <span class="underline">variables</span>, you are <span class="underline">my only
+                        constant</span>... I love you
+                    beyond Rho Cassiopeiae.
+                </p>
+            </div>
+            <div class="w-2/5 h-full grid grid-rows-3 items-center	justify-items-center">
+                <span></span>
+                <p class="symbols text-8xl"><span data-aos="zoom-in" data-aos-delay="400"
+                        data-aos-duration="1200">🌻</span><span data-aos="zoom-in" data-aos-delay="800"
+                        data-aos-duration="1200">❣️</span><span data-aos="zoom-in" data-aos-duration="1200"
+                        data-aos-delay="1300">🌝</span></p>
+                <a href="#letter" style="font-family: 'Playfair Display', serif;"
+                    class="bg-gray-900 text-3xl text-white pt-2 pb-3 px-20">Next step -></a>
+            </div>
+        </div>
+        <div class="py-20 h-screen overflow-auto" id="letter">
+            <div class="max-w-3xl w-full mx-auto">
+                <h2 data-aos="fade" data-aos-duration="1200"
+                    class="letter__content text-5xl italic text-left font-semibold mb-4">
+                    My first letter, #6
+                </h2>
+                <p class="letter__content text-justify text-2xl leading-9" data-aos="fade-up" data-aos-delay="300"
+                    data-aos-duration="1200">
+                    Hola guapa, este es mi regalo para ti en nuestro sexto mes de novios, es un detalle que te quise dar
+                    desde un tiempo atrás, pero no lo había logrado, ya te enteraras. Sé que no es muy útil, pero le
+                    dedique todo mi cariño a que se viera lo más bonito posible.
+                </p>
+                <br />
+                <p class="letter__content text-justify text-2xl leading-9" data-aos="fade-up" data-aos-delay="600"
+                    data-aos-duration="1200">
+                    Esto es el resultado de mi trabajo algo que he hecho por varios años y de alguna u otra manera en
+                    esto me desempeño bien y como es así, entonces quería crear algo que te representara, espero te
+                    guste.
+                </p>
+                <br />
+                <p class="letter__content text-justify text-2xl leading-9" data-aos="fade-up" data-aos-delay="900"
+                    data-aos-duration="1200">
+                    Quiero que sepas que tu carisma, tu belleza, tu sonrisa, todo lo que eres y lo que has hecho. Ha
+                    cautivado cada día de mi vida desde que te conocí. Tu manera de ser te convierte en un ser de
+                    admirar y de valorar. Quiero estar toda mi vida contigo amor.
+                </p>
+                <br />
+                <p class="letter__content text-justify text-2xl leading-9" data-aos="fade-up" data-aos-delay="900"
+                data-aos-duration="1200">
+                    Ya por terminar, creo que esto nunca te lo he contado, recuerdas cuando empezaste a darme clases
+                    presenciales que se dañó la lámpara de la oficina, En mi mente existía la alegoría de que tu
+                    energía, tú vibra positiva era tanta que fundiste el bombillo. je, je, je aunque simplemente es una
+                    representación en mi cabeza, creo que así eres y eso me gusta mucho de ti.
+                </p>
+                <a href="#date" id="letterBtn"
+                    class="shadow bg-white rounded p-4 grid w-40 mx-auto mt-10 transform scale-100 hover:scale-105 transition">
+                    <img src="./next_step.jpeg" alt="" class="w-full h-full">
+                    <p class="phrase mt-2">Click here</p>
+                </a>
+            </div>
+        </div>
+        <div class="date relative w-full h-screen" id="date">
+            <div class="date_content hidden w-full h-full absolute grid place-content-center">
+                <p>Our date is 26 or 27 on June, Do you look good?</p>
+            </div>
+    </main>
+    <script src="./index.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/typeit@7.0.4/dist/typeit.min.js"></script>
+    <script>
+        $("#introBtn").on("click", async function () {
+            new TypeIt("#phraseContent", {
+                speed: 50,
+                startDelay: 900
+            }).go();
+        });
+
+    </script>
+</body>
+
+</html>
